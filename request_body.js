@@ -50,5 +50,13 @@ app.get('/users/:username/photo', (req, res) =>{
 app.get('/name/:name/age/:age', (req, res) =>{
     res.send(`El usuario es: ${req.params.name} y su edad es: ${req.params.age}`)
 })
+
+
+// methodo all
+
+app.get('/info', (req, res) =>{
+    res.send('server info');
+});
+
 app.listen('3000');
 console.log('Esta funcionando');
